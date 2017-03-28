@@ -45,3 +45,5 @@ group :development do
   gem 'spring'
 end
 gem 'shoppe'
+gem "mini_magick"
+
