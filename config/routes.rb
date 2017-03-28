@@ -54,4 +54,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+    get "product/:permalink", to: "products#show", as: "product"
+    post "product/:permalink", to: "products#buy", as: "buy"
+    root to: "products#index"
 end
