@@ -59,5 +59,6 @@ Rails.application.routes.draw do
     root to: "products#index"
     post "product/:permalink", to: "products#buy"
     get "basket", to: "orders#show"
+    get "home", to: "home#index" 
 
 end
