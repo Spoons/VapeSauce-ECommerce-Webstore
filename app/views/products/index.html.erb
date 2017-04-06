@@ -8,10 +8,13 @@
 <body>
 
 
+<div class="container">    
+<% i = 1 %>
 <% @products.each do |categories,products| %>
     <% products.each do |product| %>
-<div class="container">    
+    <% if i % 3 == 0 %>
     <div class="row">
+    <% end %>
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -27,10 +30,16 @@
                 <div class="panel-footer"><%= product.short_description %></div>
             </div>
         </div>
+
+
+    <% if i % 3 == 0 %>
     </div>
+    <% end %>
+    <% i = i + 1 %>
+
+<%end%>
+<%end%>
 </div><br>
-<%end%>
-<%end%>
 <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>  
     <form class="form-inline">Get deals:
