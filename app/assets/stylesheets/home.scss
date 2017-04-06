@@ -7,3 +7,67 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ 
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    
+    
+
+
+
+body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+      
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+    
+
+    .item img {
+      width: auto;
+      height: 450px;
+      max-height: 450px;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+
+
+    .panel-body {
+      background: black;
+    }
+    .panel-heading {
+      text-align: center;
+    }
+
+    .myCarousel {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }

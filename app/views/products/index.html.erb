@@ -1,14 +1,43 @@
-<h2>Products</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<% @products.each do |category, products| %>
-      <h3><%= category.name %></h3>
-  <ul>
+<head>
+    <title>Shop Products</title>
+</head>
+
+<body>
+
+
+<% @products.each do |categories,products| %>
     <% products.each do |product| %>
-        <li>
-      <h4><%= link_to product.name, product_path(product.permalink) %></h4>
-      <p><%= product.short_description %></p>
-      <p><b>Price:</b> <%= number_to_currency product.price %></p>
-    </li>
-    <% end %>
-  </ul>
-<% end %>
+<div class="container">    
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <%= link_to product.name, product_path(product.permalink) %>
+            </div>
+
+            <div class="panel-body">
+                <% if product.default_image %>
+                    <%= image_tag product.default_image.path, :width=> '200px' %>
+                <% end %>
+            
+            </div>
+                <div class="panel-footer"><%= product.short_description %></div>
+            </div>
+        </div>
+    </div>
+</div><br>
+<%end%>
+<%end%>
+<footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>  
+    <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+</footer>
+
+</body>
+</html>

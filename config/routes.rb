@@ -56,9 +56,10 @@ Rails.application.routes.draw do
   #   end
     get "product/:permalink", to: "products#show", as: "product"
     post "product/:permalink", to: "products#buy", as: "buy"
-    root to: "products#index"
+    root to: "home#index"
     post "product/:permalink", to: "products#buy"
     get "basket", to: "orders#show"
     get "home", to: "home#index" 
+    resources :products
 
 end

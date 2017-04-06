@@ -1,52 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
-<body>
-
-<% if current_order %>
-    <p style="border:1px solid black;padding:10px;">
-  You have <%= pluralize current_order.total_items, 'item'%> in your basket which cost
-  <%= number_to_currency current_order.total_before_tax %>.
-  <%= link_to "View basket", basket_path %>
-  <%= flash[:notice] %>
-  </p>
-  <% end %>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
+  <titleVapeSauce</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-    }
-    
-    /* Remove the jumbotron's default bottom margin */ 
-     .jumbotron {
-      margin-bottom: 0;
-    }
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+  <html lang="en">
+  <%= csrf_meta_tags %>
 </head>
-<body>
+    
+    <!-- Start nav code here -->
+    
+    <body>
 
-<div class="jumbotron">
+  <header>
+<div class="jumbotron" style="background-image: url(<%= image_tag "vapecloud.png" %>)">
   <div class="container text-center">
-    <h1>Online Store</h1>      
-    <p>Mission, Vission & Values</p>
+    <h1>VapeSauce Online Store</h1>
+    <p>The only store for the true gentleman</p>
   </div>
 </div>
 
@@ -56,19 +28,21 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">
+        <%= image_tag "VapeSauceLogo.png", :class => "logo" %>
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Stores</a></li>
+        <%# <%= link_to "Products", product_path %>
+        <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Login</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
@@ -76,7 +50,11 @@
   </div>
 </nav>
 
-<%= yield %> 
+</header>
 
 </body>
+    
+    <!-- End nav code here -->
+
+<%= yield %>
 </html>
