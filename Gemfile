@@ -48,3 +48,5 @@ gem 'shoppe'
 gem "mini_magick"
 
 gem 'bootstrap-sass'
+
+gem 'execjs'
