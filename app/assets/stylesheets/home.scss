@@ -20,6 +20,22 @@ background-size: cover;
   color: white;
 } 
 */
+
+#button{
+  font-size: 24px;
+  display: block;
+  text-align: center;
+  
+}
+button{
+ background-color: gray;
+ color: white;
+ border: none;
+ position: relative;
+ padding: 15px 30px;
+ text-decoration:none;
+}
+
 .jumbotron{
   position: relative;
     overflow: hidden;
@@ -47,8 +63,8 @@ background-size: cover;
 
 .item img {
   width: auto;
-  height: 450px;
-  max-height: 450px;
+  height: 200px;
+  max-height: 200px;
   margin-left: auto;
   margin-right: auto;
 }
