@@ -52,22 +52,27 @@
 <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Devices</a></li>
-            <li><a href="#">Juice</a></li>
-            <li><a href="#">Clothing</a></li>
-            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Gaming Fuel</a></li>
+            <li><a href="#">Gentlemen's Wear</a></li>
+            <li><a href="#">Pony Products</a></li>
+            <li><a href="#">Vape Gear</a></li>
+            <li><a href="#">Vape Juice</a></li>
+            <li><a href="#">Waifus</a></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "All Products", products_path %></li>
           </ul>
         </li>
         
-        <li><a href="#">About Us</a></li> <%#views/about.html.erb%>
-        <li><a href="#">Contact</a></li> <%#views/contact.html.erb%>
+        <li><%= link_to "About", about_path %></li> <%#views/about.html.erb%>
+        <li><%= link_to "Contact Us", contact_path %></li> <%#views/contact.html.erb%>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><%= link_to basket_path do %>
+          <span class="glyphicon glyphicon-shopping-cart"></span> Cart
+          <%end%>
+          </li>
       </ul>
     </div>
   </div>

@@ -61,5 +61,7 @@ Rails.application.routes.draw do
     get "basket", to: "orders#show"
     get "home", to: "home#index" 
     resources :products
+    get "about", to: "about#index"
+    get "contact", to: "contact#index"
 
 end

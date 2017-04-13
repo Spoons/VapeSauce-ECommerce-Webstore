@@ -25,15 +25,20 @@ background-size: cover;
   font-size: 24px;
   display: block;
   text-align: center;
+  background-color:black;
   
 }
-button{
- background-color: gray;
+.enter{
+ background-color: black;
  color: white;
  border: none;
  position: relative;
  padding: 15px 30px;
  text-decoration:none;
+ font-weight:bold;
+}
+.enter:hover{
+  background-color: gray;
 }
 
 .jumbotron{
@@ -62,17 +67,12 @@ button{
 }
 
 .item img {
-  width: auto;
-  height: 200px;
-  max-height: 200px;
+  max-width: 300;
+  max-height: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-.panel-body {
-  background: black;
-}
 .panel-heading {
   text-align: center;
 }
@@ -84,9 +84,7 @@ button{
 
 }
 #myCarousel {
-  margin-bottom: 50px;
   border-radius: 0;
-  padding: 25px;
 }
 
 

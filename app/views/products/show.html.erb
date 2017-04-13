@@ -4,7 +4,6 @@
     <%= image_tag @product.default_image.path, :width => '350px' %>
   <% end %>
 
-<p><%= @product.short_description %></p>
 <p>
 <b><%= number_to_currency @product.price %></b>
 <%= link_to "Add to basket", product_path(@product.permalink), :method => :post %>

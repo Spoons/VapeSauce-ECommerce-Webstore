@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<head>
+  <title>Home</title>
+
 <body>
 
 
@@ -51,8 +54,7 @@
 </div>
 
 <div id = 'button'>
-  <button class ="enter" style='button'>Enter, ye noble gentlesir</button>
-  <%= button_to "All Products", products_path, :method => "get" %>
+  <%= button_to "Enter, ye noble gentlesir", products_path, :method => "get", :class =>"enter" %>
 </div>
 
 
@@ -64,17 +66,6 @@
 </div>
 </div>
 
-
-
-<footer class="container-fluid text-center">
-  <font color="white">
-  <p>Online Store Copyright</p>
-  <font color="white">
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
-</footer>
 
 </body>
 </html>
