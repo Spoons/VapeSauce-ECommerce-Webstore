@@ -67,14 +67,14 @@ background-size: cover;
 }
 
 .item img {
-  max-width: 300;
-  max-height: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  height: 460px;
+  max-height: 460px;
 }
 
-.panel-heading {
+.panel-footer {
   text-align: center;
+  color: black;
 }
 .panel-body img{
 
@@ -85,6 +85,7 @@ background-size: cover;
 }
 #myCarousel {
   border-radius: 0;
+  height: 460px;
 }
 
 

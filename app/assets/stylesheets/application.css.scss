@@ -31,6 +31,16 @@ logo{
 .navbar{
  margin-bottom:0px;
 }
-.panel-default > .panel-heading {
+/*.panel-default > .panel-heading {
     background-color: #337ab7; color: white;
 }
+*/
+.panel-footer {
+    color: white;
+    padding: 10px 15px;
+    background-color: #423f3f;
+    border-top: 1px solid #777777;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+

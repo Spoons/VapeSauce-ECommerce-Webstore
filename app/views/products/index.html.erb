@@ -6,6 +6,11 @@
 </head>
 
 <body>
+<header>
+    <div class="container-fluid text-center">
+    <h1>Products</h1>
+    </div>
+</header>
 
 <div class="container">    
 <% i = 1 %>
@@ -15,10 +20,8 @@
     <div class="row">
     <% end %>
         <div class="col-sm-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <%= product.name %>
-            </div>
+            <div class="panel-group">
+               
 
             <div class="panel-body">
                 <%= link_to product_path(product.permalink) do %>
@@ -28,7 +31,7 @@
                 <%end %>
             
             </div>
-                <div class="panel-footer"><%= product.short_description %></div>
+                <div class="panel-footer"><%= product.name %></div>
             </div>
         </div>
 
@@ -40,5 +43,7 @@
 <%end%>
 <%end%>
 </div>
+
+<body id= "productindex-body"</body>
 </body>
 </html>

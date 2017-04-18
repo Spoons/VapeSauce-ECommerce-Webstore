@@ -63,5 +63,5 @@ Rails.application.routes.draw do
     resources :products
     get "about", to: "about#index"
     get "contact", to: "contact#index"
-
+    get "users", to: "shoppe/users#index"
 end
