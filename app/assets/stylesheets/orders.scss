@@ -10,6 +10,6 @@ table{
     width: 80%;
     margin: auto;
 }
-th, td{
-    border: 1px solid black;
+table.bottomBorder th, table.bottomBorder td{
+    border-bottom: 1px solid black;
 }
