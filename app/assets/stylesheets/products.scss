@@ -3,5 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body#productindex-body{
-    background-color: white;
+    background-color: #e0e0e0;
+}
+
+.panel-body{
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px black;
+}
+
+div.text-center:nth-child(1) > h1:nth-child(1) {
+    font-size: 5em;
 }
