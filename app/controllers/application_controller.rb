@@ -1,17 +1,22 @@
 class ApplicationController < ActionController::Base
 
+ helper_method :current_user
+  
+  def current_user
+      @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
     private
 
     def current_order
         @current_order ||= begin
-                               if has_order?
-                                   @current_order
-                               else
-                                   order = Shoppe::Order.create(:ip_address => request.ip)
-                                   session[:order_id] = order.id
-                                   order
-                               end
-                           end
+            if has_order?
+                @current_order
+            else
+                order = Shoppe::Order.create(:ip_address => request.ip)
+                session[:order_id] = order.id
+                order
+            end
+        end
     end
 
     def has_order?

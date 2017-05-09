@@ -33,17 +33,14 @@ logo{
 .navbar{
  margin-bottom:0px;
 }
-/*.panel-default > .panel-heading {
-    background-color: #337ab7; color: white;
-}
-*/
+
 .panel-footer {
-    color: white;
-    padding: 10px 15px;
-    background-color: #423f3f;
-    border-top: 1px solid #777777;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+ color: white;
+ padding: 10px 15px;
+ background-color: #423f3f;
+ border-top: 1px solid #777777;
+ border-bottom-right-radius: 50px;
+ border-bottom-left-radius: 50px;
 }
 .top-level-nav{
  background-color: rgba(0,0,0,0.75);
@@ -54,4 +51,14 @@ ul.nav:nth-child(1) > li > a {
 }
 #myNavbar .navbar-right li a{
  color: white;
+}
+#myNavbar .navbar-right{
+ color: white;
+}
+
+
+.login_span {
+ padding-top:15px;
+ display: block;
+ position:relative;
 }

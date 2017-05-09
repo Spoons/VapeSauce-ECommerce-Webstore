@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323203836) do
+ActiveRecord::Schema.define(version: 20170425191253) do
 
   create_table "nifty_key_value_store", force: :cascade do |t|
     t.integer "parent_id"
@@ -318,5 +318,15 @@ ActiveRecord::Schema.define(version: 20170323203836) do
   end
 
   add_index "shoppe_users", ["email_address"], name: "index_shoppe_users_on_email_address"
+
+  create_table "users", force: :cascade do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
 end

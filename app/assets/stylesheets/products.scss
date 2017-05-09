@@ -10,9 +10,27 @@ body#productindex-body{
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 0 0 2px 2px black;
-    font-color: white;
+}
+.panel-footer{
+    color: white !important;
 }
 
 div.text-center:nth-child(1) > h1:nth-child(1) {
     font-size: 5em;
+}
+
+
+a:hover, a:focus {
+  color: white !important;
+  text-decoration: underline;
+}
+#productindex-body > div.panel-footer > a{
+    color:white;
+}
+
+.panel-footer  > a{
+    color: white;
+}
+#categories{
+    color: black;
 }
