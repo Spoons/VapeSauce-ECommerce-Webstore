@@ -42,7 +42,9 @@
             <% end  %>
           </span>
         </li>
-        <li><%= link_to "Cart",  basket_path%>
+        <li><%= link_to basket_path do %>
+          <span class="glyphicon glyphicon-shopping-cart"></span> Cart
+          <%end%>
           </li>
       </ul>
     </div>

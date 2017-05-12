@@ -5,5 +5,5 @@ window.onload = function() {
 };
 function al(){
     alert('Thank you, your order is being processed');
-    var items =document.getElementsByName("order.order_items");
+    //var items =document.getElementsByName("order.order_items");
 }
